@@ -1,0 +1,142 @@
+const dict = {
+  bn: {
+    nav_commission: "কমিশন",
+    nav_benefits: "সুবিধা",
+    nav_process: "প্রক্রিয়া",
+    nav_contact: "যোগাযোগ",
+    nav_cta: "এখনই যোগ দিন",
+    kicker: "বাংলাদেশ · আন্তর্জাতিক পেমেন্ট নেটওয়ার্ক",
+    hero_title: "বিকাশ ও নগদ এজেন্ট নিয়োগ",
+    hero_sub: "We recruit bKash & Nagad agents  & personal wallets",
+    hero_lead: "লেনদেনের উপর ৫–৮% কমিশন। প্রতিদিন সেটেলমেন্ট। স্থিতিশীল ফ্লো, স্বচ্ছ হিসাব, দ্রুত সাপোর্ট।",
+    stat_commission: "কমিশন / Commission",
+    stat_daily_n: "প্রতিদিন",
+    stat_settle: "সেটেলমেন্ট / Daily payout",
+    stat_channel: "পেমেন্ট চ্যানেল",
+    bkash_desc: "উচ্চ ফ্লো, দ্রুত ক্যাশ-ইন/আউট। অভিজ্ঞ এজেন্ট অগ্রাধিকার।",
+    nagad_desc: "স্থিতিশীল অর্ডার, স্বচ্ছ রিপোর্ট। দৈনিক হিসাব নিষ্পত্তি।",
+    sec_pay: "কমিশন ও সেটেলমেন্ট",
+    sec_pay_title: "লেনদেন অনুযায়ী আয় — প্রতিদিন পরিশোধ",
+    sec_pay_lead: "কোনো মাসিক বিলম্ব নয়। দিন শেষে হিসাব ক্লিয়ার, পরের দিন নতুন ফ্লো।",
+    pay_tag: "স্ট্যান্ডার্ড রেট",
+    pay_note: "টার্নওভার / ভলিউম অনুযায়ী",
+    pay_1: "প্রতিটি সফল লেনদেনের উপর কমিশন",
+    pay_2: "দৈনিক সেটেলমেন্ট (Daily settlement)",
+    pay_3: "স্বচ্ছ স্টেটমেন্ট ও রিয়েল-টাইম আপডেট",
+    pay_4: "ভলিউম বাড়লে রেট বাড়ে",
+    settle_title: "সেটেলমেন্ট সাইকেল",
+    t1t: "কাজ সম্পন্ন",
+    t1d: "অর্ডার প্রসেস ও কনফার্ম",
+    t2t: "দিন শেষে রিপোর্ট",
+    t2d: "টার্নওভার ও কমিশন মিলিয়ে দেখা",
+    t3t: "প্রতিদিন পেমেন্ট",
+    t3d: "কমিশন সেদিনই / পরের সাইকেলে ক্লিয়ার",
+    trust: "আন্তর্জাতিক পেমেন্ট ব্যবসা · বাংলাদেশ ফোকাস · দীর্ঘমেয়াদি সহযোগিতা চাই",
+    sec_why: "কেন GoPay",
+    sec_why_title: "এজেন্টদের জন্য পরিষ্কার নিয়ম, স্থিতিশীল কাজ",
+    b1t: "দ্রুত সেটেলমেন্ট",
+    b1d: "দিন শেষে হিসাব। টাকা আটকে রাখা নয় — এজেন্টের ক্যাশফ্লো সুরক্ষিত।",
+    b2t: "উচ্চ কমিশন",
+    b2d: "৫–৮% রেঞ্জ। ভলিউম ও কোয়ালিটি অনুযায়ী ন্যায্য রেট।",
+    b3t: "স্থিতিশীল ফ্লো",
+    b3d: "আন্তর্জাতিক পেমেন্ট অর্ডার ধারাবাহিকভাবে আসে, খালি বসে থাকতে হয় না।",
+    b4t: "২৪/৭ যোগাযোগ",
+    b4d: "WhatsApp ও Telegram-এ সরাসরি সাপোর্ট। সমস্যা হলে দ্রুত সমাধান।",
+    sec_how: "কীভাবে শুরু করবেন",
+    sec_how_title: "চার ধাপে এজেন্ট হয়ে যান",
+    s1t: "যোগাযোগ",
+    s1d: "WhatsApp বা Telegram-এ মেসেজ পাঠান।",
+    s2t: "যাচাই",
+    s2d: "bKash / Nagad এজেন্ট স্ট্যাটাস ও ফ্লোট নিশ্চিতকরণ।",
+    s3t: "টেস্ট অর্ডার",
+    s3d: "ছোট ভলিউমে প্রক্রিয়া মিলিয়ে নিন।",
+    s4t: "দৈনিক কাজ",
+    s4d: "অর্ডার নিন, কমিশন প্রতিদিন নিন।",
+    cta_kicker: "এখনই আবেদন করুন",
+    cta_title: "আপনার এজেন্টশিপ দিয়ে আয় শুরু করুন",
+    cta_lead: "নিচের চ্যানেলে সরাসরি কথা বলুন। ব্যবসার নাম বললেই দ্রুত রেসপন্স পাবেন।",
+    open_chat: "চ্যাট খুলুন →",
+    open_tg: "প্রোফাইল খুলুন →",
+    footer: "bKash ও Nagad চ্যানেলে আন্তর্জাতিক পেমেন্ট সহযোগিতা। এটি অফিসিয়াল bKash/Nagad পেজ নয় — স্বাধীন এজেন্ট পার্টনারশিপ।"
+  },
+  en: {
+    nav_commission: "Commission",
+    nav_benefits: "Benefits",
+    nav_process: "Process",
+    nav_contact: "Contact",
+    nav_cta: "Join now",
+    kicker: "Bangladesh · International payment network",
+    hero_title: "Hiring bKash & Nagad agent & personal wallets",
+    hero_sub: "বিকাশ ও নগদ এজেন্ট নিয়োগ",
+    hero_lead: "Earn 5–8% commission on turnover. Daily settlement. Stable flow, transparent books, fast support.",
+    stat_commission: "Commission on volume",
+    stat_daily_n: "Daily",
+    stat_settle: "Settlement / payout",
+    stat_channel: "Payment channels",
+    bkash_desc: "High volume, fast cash-in/out. Experienced agents preferred.",
+    nagad_desc: "Stable orders, clear reports. Accounts cleared every day.",
+    sec_pay: "Commission & settlement",
+    sec_pay_title: "Paid on turnover — settled every day",
+    sec_pay_lead: "No monthly hold. Books clear at day-end, fresh flow the next morning.",
+    pay_tag: "Standard rate",
+    pay_note: "Based on turnover / volume",
+    pay_1: "Commission on every successful transaction",
+    pay_2: "Daily settlement",
+    pay_3: "Transparent statements and live updates",
+    pay_4: "Higher volume can unlock a higher rate",
+    settle_title: "Settlement cycle",
+    t1t: "Complete the work",
+    t1d: "Process and confirm orders",
+    t2t: "End-of-day report",
+    t2d: "Match turnover and commission",
+    t3t: "Daily payout",
+    t3d: "Commission cleared same day / next cycle",
+    trust: "International payments · Bangladesh focus · looking for long-term partners",
+    sec_why: "Why GoPay",
+    sec_why_title: "Clear rules and steady work for agents",
+    b1t: "Fast settlement",
+    b1d: "Day-end accounting. Funds are not parked — your cash flow stays protected.",
+    b2t: "High commission",
+    b2d: "5–8% range. Fair rate by volume and quality.",
+    b3t: "Stable flow",
+    b3d: "International payment orders arrive continuously — you are not left idle.",
+    b4t: "24/7 contact",
+    b4d: "Direct support on WhatsApp and Telegram. Issues get resolved fast.",
+    sec_how: "How to start",
+    sec_how_title: "Become an agent in four steps",
+    s1t: "Reach out",
+    s1d: "Send a message on WhatsApp or Telegram.",
+    s2t: "Verify",
+    s2d: "Confirm bKash / Nagad agent status and float.",
+    s3t: "Test orders",
+    s3d: "Align the process on a small volume first.",
+    s4t: "Daily work",
+    s4d: "Take orders and collect commission every day.",
+    cta_kicker: "Apply now",
+    cta_title: "Start earning with your agency",
+    cta_lead: "Talk to us on the channels below. Mention your business name for a faster reply.",
+    open_chat: "Open chat →",
+    open_tg: "Open profile →",
+    footer: "International payment partnership on bKash and Nagad rails. This is not an official bKash/Nagad page — independent agent partnership."
+  }
+};
+
+function applyLang(lang) {
+  const pack = dict[lang] || dict.bn;
+  document.documentElement.lang = lang;
+  document.body.dataset.lang = lang;
+  document.querySelectorAll("[data-i18n]").forEach((el) => {
+    const key = el.getAttribute("data-i18n");
+    if (pack[key]) el.innerHTML = pack[key];
+  });
+  document.querySelectorAll(".lang-btn").forEach((btn) => {
+    btn.classList.toggle("is-active", btn.dataset.lang === lang);
+  });
+  localStorage.setItem("gopay-lang", lang);
+}
+
+document.querySelectorAll(".lang-btn").forEach((btn) => {
+  btn.addEventListener("click", () => applyLang(btn.dataset.lang));
+});
+
+applyLang(localStorage.getItem("gopay-lang") || "bn");
